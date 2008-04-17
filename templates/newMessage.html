@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+	     
+	 <div class="message">    
+	     <h2>Add message</h2>
+	    <form action="/messages" method="post">
+	      <div> Message name:<br/>
+		      <input type="text" name="name"/> *<br/>
+		      <textarea name="content" rows="4" cols="40" max_length="150"></textarea>
+	      </div>
+	      <div><input type="submit" value="create"> or
+	      <a href="/">cancel</a></div>
+	    </form>
+	</div>
+  {% endblock %}

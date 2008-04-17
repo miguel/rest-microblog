@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+	     
+	 <div class="message">    
+	     <h2>Edit message</h2>
+	    <form action="/messages/{{message.name}}" method="post">
+	      <input type="hidden" name="_verb" value="put" />
+	      <div> Message name:<br/>
+		      <input type="text" name="name" value="{{message.name}}"/><br/>
+		      <textarea name="content" rows="4" cols="40">{{message.content}}</textarea>
+	      </div>
+	      <div><input type="submit" value="update"> or
+	      <a href="/messages/{{message.name}}">cancel</a></div>
+	    </form>
+	</div>
+  {% endblock %}

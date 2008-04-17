@@ -1,0 +1,19 @@
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+  </head>
+  <body>
+    
+    <div id="header"> 
+        <p class="actions"><a href="{{ url }}">{{ url_linktext }}</a></p>
+        <p id="title"><a href="/"><h1>microBLOG</h1></a></p> 
+    </div>
+    <div id="content">
+	     {% block content %}{% endblock %}
+    </div>
+    
+    <div id="footer">
+	 
+   </div>
+  </body>
+</html> 

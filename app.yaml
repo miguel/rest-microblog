@@ -1,0 +1,14 @@
+application: microblog
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /stylesheets/(.*)
+  static_files: static/stylesheets/\1
+  upload: static/stylesheets/(.*\.css)
+  
+- url: /.*
+  script: microblog.py
+
+

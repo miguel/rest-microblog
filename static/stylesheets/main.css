@@ -1,0 +1,35 @@
+body {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   small;
+  background-color: #222;
+  margin: 0;
+}
+
+#login {float: right; padding-right: 10px;}
+a{color: orange}
+#header {
+	color: #fff;
+	padding: 10px;
+	text-align: center
+	}
+#header h1 {font-size: 125%}
+
+#content{
+	width: 40%;
+	margin: auto
+	}
+#footer {background-color: #fff}
+
+.message {
+	background-color: #333;
+	margin: 10px;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #bbb;
+	}
+	
+.actions {text-align: right}	
+
+#title a {color: #fff;text-decoration: none;
+}
